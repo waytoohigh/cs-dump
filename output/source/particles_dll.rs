@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2024-11-03 00:18:14.414705100 UTC
+// 2024-11-07 15:04:54.421343500 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -2888,7 +2888,7 @@ pub mod cs2_dumper {
                 pub const m_bInfiniteBounds: usize = 0x23C; // bool
                 pub const m_bEnableNamedValues: usize = 0x23D; // bool
                 pub const m_NamedValueDomain: usize = 0x240; // CUtlString
-                pub const m_NamedValueLocals: usize = 0x248; // 
+                pub const m_NamedValueLocals: usize = 0x248; // CUtlVector<ParticleNamedValueSource_t*>
                 pub const m_ConstantColor: usize = 0x260; // Color
                 pub const m_ConstantNormal: usize = 0x264; // Vector
                 pub const m_flConstantRadius: usize = 0x270; // float32

@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2024-11-03 00:18:14.414705100 UTC
+// 2024-11-07 15:04:54.421343500 UTC
 
 #pragma once
 
@@ -1757,7 +1757,7 @@ namespace cs2_dumper {
             namespace CAttachment {
                 constexpr std::ptrdiff_t m_name = 0x0; // CUtlString
                 constexpr std::ptrdiff_t m_influenceNames = 0x8; // CUtlString[3]
-                constexpr std::ptrdiff_t m_vInfluenceRotations = 0x20; // Quaternion[3]
+                constexpr std::ptrdiff_t m_vInfluenceRotations = 0x20; // 
                 constexpr std::ptrdiff_t m_vInfluenceOffsets = 0x50; // Vector[3]
                 constexpr std::ptrdiff_t m_influenceWeights = 0x74; // float32[3]
                 constexpr std::ptrdiff_t m_bInfluenceRootTransform = 0x80; // bool[3]
@@ -4577,7 +4577,7 @@ namespace cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CAnimationGraphVisualizerPrimitiveBase {
-                constexpr std::ptrdiff_t m_Type = 0x8; // 
+                constexpr std::ptrdiff_t m_Type = 0x8; // CAnimationGraphVisualizerPrimitiveType
                 constexpr std::ptrdiff_t m_OwningAnimNodePaths = 0xC; // AnimNodeID[11]
                 constexpr std::ptrdiff_t m_nOwningAnimNodePathCount = 0x38; // int32
             }
@@ -5427,7 +5427,7 @@ namespace cs2_dumper {
             // MGetKV3ClassDefaults
             namespace CPoseHandle {
                 constexpr std::ptrdiff_t m_nIndex = 0x0; // uint16
-                constexpr std::ptrdiff_t m_eType = 0x2; // PoseType_t
+                constexpr std::ptrdiff_t m_eType = 0x2; // 
             }
             // Parent: CNmIDValueNode__CDefinition
             // Field count: 2
@@ -5553,8 +5553,8 @@ namespace cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CAnimAttachment {
-                constexpr std::ptrdiff_t m_influenceRotations = 0x0; // Quaternion[3]
-                constexpr std::ptrdiff_t m_influenceOffsets = 0x30; // 
+                constexpr std::ptrdiff_t m_influenceRotations = 0x0; // 
+                constexpr std::ptrdiff_t m_influenceOffsets = 0x30; // VectorAligned[3]
                 constexpr std::ptrdiff_t m_influenceIndices = 0x60; // int32[3]
                 constexpr std::ptrdiff_t m_influenceWeights = 0x6C; // float32[3]
                 constexpr std::ptrdiff_t m_numInfluences = 0x78; // uint8

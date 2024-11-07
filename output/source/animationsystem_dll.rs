@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2024-11-03 00:18:14.414705100 UTC
+// 2024-11-07 15:04:54.421343500 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -1848,7 +1848,7 @@ pub mod cs2_dumper {
             pub mod CAttachment {
                 pub const m_name: usize = 0x0; // CUtlString
                 pub const m_influenceNames: usize = 0x8; // CUtlString[3]
-                pub const m_vInfluenceRotations: usize = 0x20; // Quaternion[3]
+                pub const m_vInfluenceRotations: usize = 0x20; // 
                 pub const m_vInfluenceOffsets: usize = 0x50; // Vector[3]
                 pub const m_influenceWeights: usize = 0x74; // float32[3]
                 pub const m_bInfluenceRootTransform: usize = 0x80; // bool[3]
@@ -4668,7 +4668,7 @@ pub mod cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             pub mod CAnimationGraphVisualizerPrimitiveBase {
-                pub const m_Type: usize = 0x8; // 
+                pub const m_Type: usize = 0x8; // CAnimationGraphVisualizerPrimitiveType
                 pub const m_OwningAnimNodePaths: usize = 0xC; // AnimNodeID[11]
                 pub const m_nOwningAnimNodePathCount: usize = 0x38; // int32
             }
@@ -5518,7 +5518,7 @@ pub mod cs2_dumper {
             // MGetKV3ClassDefaults
             pub mod CPoseHandle {
                 pub const m_nIndex: usize = 0x0; // uint16
-                pub const m_eType: usize = 0x2; // PoseType_t
+                pub const m_eType: usize = 0x2; // 
             }
             // Parent: CNmIDValueNode__CDefinition
             // Field count: 2
@@ -5644,8 +5644,8 @@ pub mod cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             pub mod CAnimAttachment {
-                pub const m_influenceRotations: usize = 0x0; // Quaternion[3]
-                pub const m_influenceOffsets: usize = 0x30; // 
+                pub const m_influenceRotations: usize = 0x0; // 
+                pub const m_influenceOffsets: usize = 0x30; // VectorAligned[3]
                 pub const m_influenceIndices: usize = 0x60; // int32[3]
                 pub const m_influenceWeights: usize = 0x6C; // float32[3]
                 pub const m_numInfluences: usize = 0x78; // uint8

@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2024-11-03 00:18:14.414705100 UTC
+// 2024-11-07 15:04:54.421343500 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: animationsystem.dll
@@ -1752,7 +1752,7 @@ namespace CS2Dumper.Schemas {
         public static class CAttachment {
             public const nint m_name = 0x0; // CUtlString
             public const nint m_influenceNames = 0x8; // CUtlString[3]
-            public const nint m_vInfluenceRotations = 0x20; // Quaternion[3]
+            public const nint m_vInfluenceRotations = 0x20; // 
             public const nint m_vInfluenceOffsets = 0x50; // Vector[3]
             public const nint m_influenceWeights = 0x74; // float32[3]
             public const nint m_bInfluenceRootTransform = 0x80; // bool[3]
@@ -4572,7 +4572,7 @@ namespace CS2Dumper.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CAnimationGraphVisualizerPrimitiveBase {
-            public const nint m_Type = 0x8; // 
+            public const nint m_Type = 0x8; // CAnimationGraphVisualizerPrimitiveType
             public const nint m_OwningAnimNodePaths = 0xC; // AnimNodeID[11]
             public const nint m_nOwningAnimNodePathCount = 0x38; // int32
         }
@@ -5422,7 +5422,7 @@ namespace CS2Dumper.Schemas {
         // MGetKV3ClassDefaults
         public static class CPoseHandle {
             public const nint m_nIndex = 0x0; // uint16
-            public const nint m_eType = 0x2; // PoseType_t
+            public const nint m_eType = 0x2; // 
         }
         // Parent: CNmIDValueNode__CDefinition
         // Field count: 2
@@ -5548,8 +5548,8 @@ namespace CS2Dumper.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CAnimAttachment {
-            public const nint m_influenceRotations = 0x0; // Quaternion[3]
-            public const nint m_influenceOffsets = 0x30; // 
+            public const nint m_influenceRotations = 0x0; // 
+            public const nint m_influenceOffsets = 0x30; // VectorAligned[3]
             public const nint m_influenceIndices = 0x60; // int32[3]
             public const nint m_influenceWeights = 0x6C; // float32[3]
             public const nint m_numInfluences = 0x78; // uint8

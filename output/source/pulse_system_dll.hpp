@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2024-11-03 00:18:14.414705100 UTC
+// 2024-11-07 15:04:54.421343500 UTC
 
 #pragma once
 
@@ -1085,7 +1085,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_Constants = 0xC8; // CUtlVector<CPulse_Constant>
                 constexpr std::ptrdiff_t m_DomainValues = 0xE0; // CUtlVector<CPulse_DomainValue>
                 constexpr std::ptrdiff_t m_BlackboardReferences = 0xF8; // CUtlVector<CPulse_BlackboardReference>
-                constexpr std::ptrdiff_t m_OutputConnections = 0x110; // CUtlVector<CPulse_OutputConnection*>
+                constexpr std::ptrdiff_t m_OutputConnections = 0x110; // 
             }
             // Parent: CPulseCell_BaseFlow
             // Field count: 0

@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2024-11-03 00:18:14.414705100 UTC
+// 2024-11-07 15:04:54.421343500 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: particles.dll
@@ -2809,7 +2809,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_bInfiniteBounds = 0x23C; // bool
             public const nint m_bEnableNamedValues = 0x23D; // bool
             public const nint m_NamedValueDomain = 0x240; // CUtlString
-            public const nint m_NamedValueLocals = 0x248; // 
+            public const nint m_NamedValueLocals = 0x248; // CUtlVector<ParticleNamedValueSource_t*>
             public const nint m_ConstantColor = 0x260; // Color
             public const nint m_ConstantNormal = 0x264; // Vector
             public const nint m_flConstantRadius = 0x270; // float32

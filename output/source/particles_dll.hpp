@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2024-11-03 00:18:14.414705100 UTC
+// 2024-11-07 15:04:54.421343500 UTC
 
 #pragma once
 
@@ -2814,7 +2814,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_bInfiniteBounds = 0x23C; // bool
                 constexpr std::ptrdiff_t m_bEnableNamedValues = 0x23D; // bool
                 constexpr std::ptrdiff_t m_NamedValueDomain = 0x240; // CUtlString
-                constexpr std::ptrdiff_t m_NamedValueLocals = 0x248; // 
+                constexpr std::ptrdiff_t m_NamedValueLocals = 0x248; // CUtlVector<ParticleNamedValueSource_t*>
                 constexpr std::ptrdiff_t m_ConstantColor = 0x260; // Color
                 constexpr std::ptrdiff_t m_ConstantNormal = 0x264; // Vector
                 constexpr std::ptrdiff_t m_flConstantRadius = 0x270; // float32

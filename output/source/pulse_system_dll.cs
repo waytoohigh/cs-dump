@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2024-11-03 00:18:14.414705100 UTC
+// 2024-11-07 15:04:54.421343500 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: pulse_system.dll
@@ -1080,7 +1080,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_Constants = 0xC8; // CUtlVector<CPulse_Constant>
             public const nint m_DomainValues = 0xE0; // CUtlVector<CPulse_DomainValue>
             public const nint m_BlackboardReferences = 0xF8; // CUtlVector<CPulse_BlackboardReference>
-            public const nint m_OutputConnections = 0x110; // CUtlVector<CPulse_OutputConnection*>
+            public const nint m_OutputConnections = 0x110; // 
         }
         // Parent: CPulseCell_BaseFlow
         // Field count: 0

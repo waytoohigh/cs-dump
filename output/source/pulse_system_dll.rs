@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2024-11-03 00:18:14.414705100 UTC
+// 2024-11-07 15:04:54.421343500 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -1092,7 +1092,7 @@ pub mod cs2_dumper {
                 pub const m_Constants: usize = 0xC8; // CUtlVector<CPulse_Constant>
                 pub const m_DomainValues: usize = 0xE0; // CUtlVector<CPulse_DomainValue>
                 pub const m_BlackboardReferences: usize = 0xF8; // CUtlVector<CPulse_BlackboardReference>
-                pub const m_OutputConnections: usize = 0x110; // CUtlVector<CPulse_OutputConnection*>
+                pub const m_OutputConnections: usize = 0x110; // 
             }
             // Parent: CPulseCell_BaseFlow
             // Field count: 0
