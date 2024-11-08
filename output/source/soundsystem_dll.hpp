@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2024-11-07 15:04:54.421343500 UTC
+// 2024-11-08 21:22:44.022977900 UTC
 
 #pragma once
 
@@ -238,8 +238,8 @@ namespace cs2_dumper {
             // MPropertyFriendlyName
             // MPropertyDescription
             namespace CVoiceContainerBlender {
-                constexpr std::ptrdiff_t m_firstSound = 0xC0; // CSoundContainerReference
-                constexpr std::ptrdiff_t m_secondSound = 0xD8; // CSoundContainerReference
+                constexpr std::ptrdiff_t m_firstSound = 0xC0; // 
+                constexpr std::ptrdiff_t m_secondSound = 0xD8; // 
                 constexpr std::ptrdiff_t m_flBlendFactor = 0xF0; // float32
             }
             // Parent: None
@@ -364,7 +364,7 @@ namespace cs2_dumper {
             namespace CSoundContainerReference {
                 constexpr std::ptrdiff_t m_bUseReference = 0x0; // bool
                 constexpr std::ptrdiff_t m_sound = 0x8; // CStrongHandle<InfoForResourceTypeCVoiceContainerBase>
-                constexpr std::ptrdiff_t m_pSound = 0x10; // CVoiceContainerBase*
+                constexpr std::ptrdiff_t m_pSound = 0x10; // 
             }
             // Parent: CVoiceContainerBase
             // Field count: 0
@@ -570,7 +570,7 @@ namespace cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CAudioMorphData {
-                constexpr std::ptrdiff_t m_times = 0x0; // 
+                constexpr std::ptrdiff_t m_times = 0x0; // CUtlVector<float32>
                 constexpr std::ptrdiff_t m_nameHashCodes = 0x18; // CUtlVector<uint32>
                 constexpr std::ptrdiff_t m_nameStrings = 0x30; // CUtlVector<CUtlString>
                 constexpr std::ptrdiff_t m_samples = 0x48; // CUtlVector<CUtlVector<float32>>
@@ -752,7 +752,7 @@ namespace cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CVoiceContainerSetElement {
-                constexpr std::ptrdiff_t m_sound = 0x0; // CSoundContainerReference
+                constexpr std::ptrdiff_t m_sound = 0x0; // 
                 constexpr std::ptrdiff_t m_flVolumeDB = 0x18; // float32
             }
             // Parent: None
@@ -971,8 +971,8 @@ namespace cs2_dumper {
             // MPropertyDescription
             namespace CVoiceContainerSelector {
                 constexpr std::ptrdiff_t m_mode = 0xC0; // PlayBackMode_t
-                constexpr std::ptrdiff_t m_soundsToPlay = 0xC8; // CSoundContainerReferenceArray
-                constexpr std::ptrdiff_t m_fProbabilityWeights = 0x100; // 
+                constexpr std::ptrdiff_t m_soundsToPlay = 0xC8; // 
+                constexpr std::ptrdiff_t m_fProbabilityWeights = 0x100; // CUtlVector<float32>
             }
             // Parent: CSosGroupActionSchema
             // Field count: 2
@@ -1065,7 +1065,7 @@ namespace cs2_dumper {
             // MPropertyFriendlyName
             // MPropertyDescription
             namespace CVoiceContainerLoopTrigger {
-                constexpr std::ptrdiff_t m_sound = 0xC0; // CSoundContainerReference
+                constexpr std::ptrdiff_t m_sound = 0xC0; // 
                 constexpr std::ptrdiff_t m_flRetriggerTimeMin = 0xD8; // float32
                 constexpr std::ptrdiff_t m_flRetriggerTimeMax = 0xDC; // float32
                 constexpr std::ptrdiff_t m_flFadeTime = 0xE0; // float32

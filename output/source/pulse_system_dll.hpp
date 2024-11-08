@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2024-11-07 15:04:54.421343500 UTC
+// 2024-11-08 21:22:44.022977900 UTC
 
 #pragma once
 
@@ -563,7 +563,7 @@ namespace cs2_dumper {
             namespace CPulse_PublicOutput {
                 constexpr std::ptrdiff_t m_Name = 0x0; // CUtlSymbolLarge
                 constexpr std::ptrdiff_t m_Description = 0x8; // CUtlString
-                constexpr std::ptrdiff_t m_ParamType = 0x10; // 
+                constexpr std::ptrdiff_t m_ParamType = 0x10; // CPulseValueFullType
             }
             // Parent: None
             // Field count: 0
@@ -734,9 +734,9 @@ namespace cs2_dumper {
             namespace PGDInstruction_t {
                 constexpr std::ptrdiff_t m_nCode = 0x0; // PulseInstructionCode_t
                 constexpr std::ptrdiff_t m_nVar = 0x4; // PulseRuntimeVarIndex_t
-                constexpr std::ptrdiff_t m_nReg0 = 0x8; // 
-                constexpr std::ptrdiff_t m_nReg1 = 0xA; // 
-                constexpr std::ptrdiff_t m_nReg2 = 0xC; // 
+                constexpr std::ptrdiff_t m_nReg0 = 0x8; // PulseRuntimeRegisterIndex_t
+                constexpr std::ptrdiff_t m_nReg1 = 0xA; // PulseRuntimeRegisterIndex_t
+                constexpr std::ptrdiff_t m_nReg2 = 0xC; // PulseRuntimeRegisterIndex_t
                 constexpr std::ptrdiff_t m_nInvokeBindingIndex = 0x10; // PulseRuntimeInvokeIndex_t
                 constexpr std::ptrdiff_t m_nChunk = 0x14; // PulseRuntimeChunkIndex_t
                 constexpr std::ptrdiff_t m_nDestInstruction = 0x18; // int32
@@ -765,7 +765,7 @@ namespace cs2_dumper {
             namespace CPulse_Variable {
                 constexpr std::ptrdiff_t m_Name = 0x0; // CUtlSymbolLarge
                 constexpr std::ptrdiff_t m_Description = 0x8; // CUtlString
-                constexpr std::ptrdiff_t m_Type = 0x10; // 
+                constexpr std::ptrdiff_t m_Type = 0x10; // CPulseValueFullType
                 constexpr std::ptrdiff_t m_DefaultValue = 0x20; // KeyValues3
                 constexpr std::ptrdiff_t m_bIsPublic = 0x32; // bool
                 constexpr std::ptrdiff_t m_bIsObservable = 0x33; // bool
@@ -783,7 +783,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_MethodName = 0x70; // CUtlSymbolLarge
                 constexpr std::ptrdiff_t m_Description = 0x78; // CUtlString
                 constexpr std::ptrdiff_t m_bIsPublic = 0x80; // bool
-                constexpr std::ptrdiff_t m_ReturnType = 0x88; // 
+                constexpr std::ptrdiff_t m_ReturnType = 0x88; // CPulseValueFullType
                 constexpr std::ptrdiff_t m_Args = 0x98; // CUtlLeanVector<CPulseRuntimeMethodArg>
             }
             // Parent: CBasePulseGraphInstance
@@ -941,7 +941,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_SourceEntity = 0x70; // CUtlSymbolLarge
                 constexpr std::ptrdiff_t m_SourceOutput = 0x78; // CUtlSymbolLarge
                 constexpr std::ptrdiff_t m_TargetInput = 0x80; // CUtlSymbolLarge
-                constexpr std::ptrdiff_t m_ExpectedParamType = 0x88; // 
+                constexpr std::ptrdiff_t m_ExpectedParamType = 0x88; // CPulseValueFullType
             }
             // Parent: None
             // Field count: 1
@@ -1021,9 +1021,9 @@ namespace cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CPulse_RegisterInfo {
-                constexpr std::ptrdiff_t m_nReg = 0x0; // 
-                constexpr std::ptrdiff_t m_Type = 0x8; // 
-                constexpr std::ptrdiff_t m_OriginName = 0x18; // 
+                constexpr std::ptrdiff_t m_nReg = 0x0; // PulseRuntimeRegisterIndex_t
+                constexpr std::ptrdiff_t m_Type = 0x8; // CPulseValueFullType
+                constexpr std::ptrdiff_t m_OriginName = 0x18; // CKV3MemberNameWithStorage
                 constexpr std::ptrdiff_t m_nWrittenByInstruction = 0x50; // int32
                 constexpr std::ptrdiff_t m_nLastReadByInstruction = 0x54; // int32
             }
@@ -1103,7 +1103,7 @@ namespace cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CPulse_Constant {
-                constexpr std::ptrdiff_t m_Type = 0x0; // 
+                constexpr std::ptrdiff_t m_Type = 0x0; // CPulseValueFullType
                 constexpr std::ptrdiff_t m_Value = 0x10; // KeyValues3
             }
             // Parent: CPulseCell_WaitForCursorsWithTagBase
@@ -1203,9 +1203,9 @@ namespace cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CPulseRuntimeMethodArg {
-                constexpr std::ptrdiff_t m_Name = 0x0; // 
+                constexpr std::ptrdiff_t m_Name = 0x0; // CKV3MemberNameWithStorage
                 constexpr std::ptrdiff_t m_Description = 0x38; // CUtlString
-                constexpr std::ptrdiff_t m_Type = 0x40; // 
+                constexpr std::ptrdiff_t m_Type = 0x40; // CPulseValueFullType
             }
             // Parent: None
             // Field count: 1

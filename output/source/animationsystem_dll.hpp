@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2024-11-07 15:04:54.421343500 UTC
+// 2024-11-08 21:22:44.022977900 UTC
 
 #pragma once
 
@@ -1018,7 +1018,7 @@ namespace cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CNmFrameSnapEvent {
-                constexpr std::ptrdiff_t m_frameSnapMode = 0x18; // NmFrameSnapEventMode_t
+                constexpr std::ptrdiff_t m_frameSnapMode = 0x18; // 
             }
             // Parent: None
             // Field count: 0
@@ -1103,7 +1103,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_requireRuleID = 0x10; // CGlobalSymbol
                 constexpr std::ptrdiff_t m_eventConditionRules = 0x18; // CNmBitFlags
                 constexpr std::ptrdiff_t m_nSourceStateNodeIdx = 0x1C; // int16
-                constexpr std::ptrdiff_t m_ruleCondition = 0x1E; // 
+                constexpr std::ptrdiff_t m_ruleCondition = 0x1E; // NmTransitionRuleCondition_t
             }
             // Parent: CAnimTagBase
             // Field count: 0
@@ -1490,8 +1490,8 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_syncEventOffset = 0x20; // float32
                 constexpr std::ptrdiff_t m_transitionOptions = 0x24; // CNmBitFlags
                 constexpr std::ptrdiff_t m_targetSyncIDNodeIdx = 0x28; // int16
-                constexpr std::ptrdiff_t m_blendWeightEasing = 0x2A; // NmEasingOperation_t
-                constexpr std::ptrdiff_t m_rootMotionBlend = 0x2B; // 
+                constexpr std::ptrdiff_t m_blendWeightEasing = 0x2A; // 
+                constexpr std::ptrdiff_t m_rootMotionBlend = 0x2B; // NmRootMotionBlendMode_t
             }
             // Parent: CNmFloatValueNode__CDefinition
             // Field count: 5
@@ -1502,7 +1502,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_flEaseTime = 0x10; // float32
                 constexpr std::ptrdiff_t m_flStartValue = 0x14; // float32
                 constexpr std::ptrdiff_t m_nInputValueNodeIdx = 0x18; // int16
-                constexpr std::ptrdiff_t m_easingOp = 0x1A; // NmEasingOperation_t
+                constexpr std::ptrdiff_t m_easingOp = 0x1A; // 
                 constexpr std::ptrdiff_t m_bUseStartValue = 0x1B; // bool
             }
             // Parent: None
@@ -2837,7 +2837,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_values = 0x38; // CUtlVectorFixedGrowable<float32,5>
                 constexpr std::ptrdiff_t m_flDefaultValue = 0x68; // float32
                 constexpr std::ptrdiff_t m_flEaseTime = 0x6C; // float32
-                constexpr std::ptrdiff_t m_easingOp = 0x70; // NmEasingOperation_t
+                constexpr std::ptrdiff_t m_easingOp = 0x70; // 
             }
             // Parent: CAnimUpdateNodeBase
             // Field count: 3
@@ -3063,9 +3063,9 @@ namespace cs2_dumper {
             // Field count: 17
             namespace CCompressorGroup {
                 constexpr std::ptrdiff_t m_nTotalElementCount = 0x0; // int32
-                constexpr std::ptrdiff_t m_szChannelClass = 0x8; // 
-                constexpr std::ptrdiff_t m_szVariableName = 0x20; // 
-                constexpr std::ptrdiff_t m_nType = 0x38; // CUtlVector<fieldtype_t>
+                constexpr std::ptrdiff_t m_szChannelClass = 0x8; // CUtlVector<char*>
+                constexpr std::ptrdiff_t m_szVariableName = 0x20; // CUtlVector<char*>
+                constexpr std::ptrdiff_t m_nType = 0x38; // 
                 constexpr std::ptrdiff_t m_nFlags = 0x50; // CUtlVector<int32>
                 constexpr std::ptrdiff_t m_szGrouping = 0x68; // CUtlVector<CUtlString>
                 constexpr std::ptrdiff_t m_nCompressorIndex = 0x80; // CUtlVector<int32>
@@ -4047,7 +4047,7 @@ namespace cs2_dumper {
             // MGetKV3ClassDefaults
             // MPropertyFriendlyName
             namespace CFootstepLandedAnimTag {
-                constexpr std::ptrdiff_t m_FootstepType = 0x58; // 
+                constexpr std::ptrdiff_t m_FootstepType = 0x58; // FootstepLandedFootSoundType_t
                 constexpr std::ptrdiff_t m_OverrideSoundName = 0x60; // CUtlString
                 constexpr std::ptrdiff_t m_DebugAnimSourceString = 0x68; // CUtlString
                 constexpr std::ptrdiff_t m_BoneName = 0x70; // CUtlString
@@ -6006,7 +6006,7 @@ namespace cs2_dumper {
             namespace CSeqAutoLayer {
                 constexpr std::ptrdiff_t m_nLocalReference = 0x0; // int16
                 constexpr std::ptrdiff_t m_nLocalPose = 0x2; // int16
-                constexpr std::ptrdiff_t m_flags = 0x4; // 
+                constexpr std::ptrdiff_t m_flags = 0x4; // CSeqAutoLayerFlag
                 constexpr std::ptrdiff_t m_start = 0xC; // float32
                 constexpr std::ptrdiff_t m_peak = 0x10; // float32
                 constexpr std::ptrdiff_t m_tail = 0x14; // float32
@@ -6248,7 +6248,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_aAngOffset = 0x6C; // QAngle
                 constexpr std::ptrdiff_t m_AttachmentName = 0x78; // CUtlString
                 constexpr std::ptrdiff_t m_LocalAttachmentOffsetName = 0x80; // CUtlString
-                constexpr std::ptrdiff_t m_AttachmentType = 0x88; // ModelConfigAttachmentType_t
+                constexpr std::ptrdiff_t m_AttachmentType = 0x88; // 
                 constexpr std::ptrdiff_t m_bBoneMergeFlex = 0x8C; // bool
                 constexpr std::ptrdiff_t m_bUserSpecifiedColor = 0x8D; // bool
                 constexpr std::ptrdiff_t m_bUserSpecifiedMaterialGroup = 0x8E; // bool

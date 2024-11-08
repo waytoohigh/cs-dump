@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2024-11-07 15:04:54.421343500 UTC
+// 2024-11-08 21:22:44.022977900 UTC
 
 #pragma once
 
@@ -1233,12 +1233,12 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_flDesaturation = 0x1800; // CParticleCollectionRendererFloatInput
                 constexpr std::ptrdiff_t m_flOverbrightFactor = 0x1960; // CParticleCollectionRendererFloatInput
                 constexpr std::ptrdiff_t m_nHSVShiftControlPoint = 0x1AC0; // int32
-                constexpr std::ptrdiff_t m_nFogType = 0x1AC4; // 
+                constexpr std::ptrdiff_t m_nFogType = 0x1AC4; // ParticleFogType_t
                 constexpr std::ptrdiff_t m_flFogAmount = 0x1AC8; // CParticleCollectionRendererFloatInput
                 constexpr std::ptrdiff_t m_bTintByFOW = 0x1C28; // bool
                 constexpr std::ptrdiff_t m_bTintByGlobalLight = 0x1C29; // bool
-                constexpr std::ptrdiff_t m_nPerParticleAlphaReference = 0x1C2C; // 
-                constexpr std::ptrdiff_t m_nPerParticleAlphaRefWindow = 0x1C30; // 
+                constexpr std::ptrdiff_t m_nPerParticleAlphaReference = 0x1C2C; // SpriteCardPerParticleScale_t
+                constexpr std::ptrdiff_t m_nPerParticleAlphaRefWindow = 0x1C30; // SpriteCardPerParticleScale_t
                 constexpr std::ptrdiff_t m_nAlphaReferenceType = 0x1C34; // ParticleAlphaReferenceType_t
                 constexpr std::ptrdiff_t m_flAlphaReferenceSoftness = 0x1C38; // CParticleCollectionRendererFloatInput
                 constexpr std::ptrdiff_t m_flSourceAlphaValueToMapToZero = 0x1D98; // CParticleCollectionRendererFloatInput
@@ -1264,7 +1264,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_flFeatheringMaxDist = 0x2438; // CParticleCollectionRendererFloatInput
                 constexpr std::ptrdiff_t m_flFeatheringFilter = 0x2598; // CParticleCollectionRendererFloatInput
                 constexpr std::ptrdiff_t m_flDepthBias = 0x26F8; // CParticleCollectionRendererFloatInput
-                constexpr std::ptrdiff_t m_nSortMethod = 0x2858; // ParticleSortingChoiceList_t
+                constexpr std::ptrdiff_t m_nSortMethod = 0x2858; // 
                 constexpr std::ptrdiff_t m_bBlendFramesSeq0 = 0x285C; // bool
                 constexpr std::ptrdiff_t m_bMaxLuminanceBlendingSequence0 = 0x285D; // bool
             }
@@ -1927,13 +1927,13 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_flDistortion = 0x840; // CParticleCollectionRendererFloatInput
                 constexpr std::ptrdiff_t m_bRandomizeOffsets = 0x9A0; // bool
                 constexpr std::ptrdiff_t m_bClampUVs = 0x9A1; // bool
-                constexpr std::ptrdiff_t m_nPerParticleBlend = 0x9A4; // 
-                constexpr std::ptrdiff_t m_nPerParticleScale = 0x9A8; // 
-                constexpr std::ptrdiff_t m_nPerParticleOffsetU = 0x9AC; // 
-                constexpr std::ptrdiff_t m_nPerParticleOffsetV = 0x9B0; // 
-                constexpr std::ptrdiff_t m_nPerParticleRotation = 0x9B4; // 
-                constexpr std::ptrdiff_t m_nPerParticleZoom = 0x9B8; // 
-                constexpr std::ptrdiff_t m_nPerParticleDistortion = 0x9BC; // 
+                constexpr std::ptrdiff_t m_nPerParticleBlend = 0x9A4; // SpriteCardPerParticleScale_t
+                constexpr std::ptrdiff_t m_nPerParticleScale = 0x9A8; // SpriteCardPerParticleScale_t
+                constexpr std::ptrdiff_t m_nPerParticleOffsetU = 0x9AC; // SpriteCardPerParticleScale_t
+                constexpr std::ptrdiff_t m_nPerParticleOffsetV = 0x9B0; // SpriteCardPerParticleScale_t
+                constexpr std::ptrdiff_t m_nPerParticleRotation = 0x9B4; // SpriteCardPerParticleScale_t
+                constexpr std::ptrdiff_t m_nPerParticleZoom = 0x9B8; // SpriteCardPerParticleScale_t
+                constexpr std::ptrdiff_t m_nPerParticleDistortion = 0x9BC; // SpriteCardPerParticleScale_t
             }
             // Parent: None
             // Field count: 3
@@ -3670,7 +3670,7 @@ namespace cs2_dumper {
             // MGetKV3ClassDefaults
             // MPropertyCustomEditor
             namespace CParticleVariableRef {
-                constexpr std::ptrdiff_t m_variableName = 0x0; // 
+                constexpr std::ptrdiff_t m_variableName = 0x0; // CKV3MemberNameWithStorage
                 constexpr std::ptrdiff_t m_variableType = 0x38; // PulseValueType_t
             }
             // Parent: CParticleFunctionOperator
@@ -5498,9 +5498,9 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_bReplaceTextureWithGradient = 0x1; // bool
                 constexpr std::ptrdiff_t m_hTexture = 0x8; // CStrongHandle<InfoForResourceTypeCTextureBase>
                 constexpr std::ptrdiff_t m_Gradient = 0x10; // CColorGradient
-                constexpr std::ptrdiff_t m_nTextureType = 0x28; // SpriteCardTextureType_t
-                constexpr std::ptrdiff_t m_nTextureChannels = 0x2C; // SpriteCardTextureChannel_t
-                constexpr std::ptrdiff_t m_nTextureBlendMode = 0x30; // 
+                constexpr std::ptrdiff_t m_nTextureType = 0x28; // 
+                constexpr std::ptrdiff_t m_nTextureChannels = 0x2C; // 
+                constexpr std::ptrdiff_t m_nTextureBlendMode = 0x30; // ParticleTextureLayerBlendType_t
                 constexpr std::ptrdiff_t m_flTextureBlend = 0x38; // CParticleCollectionRendererFloatInput
                 constexpr std::ptrdiff_t m_TextureControls = 0x198; // TextureControls_t
             }

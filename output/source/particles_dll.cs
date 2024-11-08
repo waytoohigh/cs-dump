@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2024-11-07 15:04:54.421343500 UTC
+// 2024-11-08 21:22:44.022977900 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: particles.dll
@@ -1228,12 +1228,12 @@ namespace CS2Dumper.Schemas {
             public const nint m_flDesaturation = 0x1800; // CParticleCollectionRendererFloatInput
             public const nint m_flOverbrightFactor = 0x1960; // CParticleCollectionRendererFloatInput
             public const nint m_nHSVShiftControlPoint = 0x1AC0; // int32
-            public const nint m_nFogType = 0x1AC4; // 
+            public const nint m_nFogType = 0x1AC4; // ParticleFogType_t
             public const nint m_flFogAmount = 0x1AC8; // CParticleCollectionRendererFloatInput
             public const nint m_bTintByFOW = 0x1C28; // bool
             public const nint m_bTintByGlobalLight = 0x1C29; // bool
-            public const nint m_nPerParticleAlphaReference = 0x1C2C; // 
-            public const nint m_nPerParticleAlphaRefWindow = 0x1C30; // 
+            public const nint m_nPerParticleAlphaReference = 0x1C2C; // SpriteCardPerParticleScale_t
+            public const nint m_nPerParticleAlphaRefWindow = 0x1C30; // SpriteCardPerParticleScale_t
             public const nint m_nAlphaReferenceType = 0x1C34; // ParticleAlphaReferenceType_t
             public const nint m_flAlphaReferenceSoftness = 0x1C38; // CParticleCollectionRendererFloatInput
             public const nint m_flSourceAlphaValueToMapToZero = 0x1D98; // CParticleCollectionRendererFloatInput
@@ -1259,7 +1259,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_flFeatheringMaxDist = 0x2438; // CParticleCollectionRendererFloatInput
             public const nint m_flFeatheringFilter = 0x2598; // CParticleCollectionRendererFloatInput
             public const nint m_flDepthBias = 0x26F8; // CParticleCollectionRendererFloatInput
-            public const nint m_nSortMethod = 0x2858; // ParticleSortingChoiceList_t
+            public const nint m_nSortMethod = 0x2858; // 
             public const nint m_bBlendFramesSeq0 = 0x285C; // bool
             public const nint m_bMaxLuminanceBlendingSequence0 = 0x285D; // bool
         }
@@ -1922,13 +1922,13 @@ namespace CS2Dumper.Schemas {
             public const nint m_flDistortion = 0x840; // CParticleCollectionRendererFloatInput
             public const nint m_bRandomizeOffsets = 0x9A0; // bool
             public const nint m_bClampUVs = 0x9A1; // bool
-            public const nint m_nPerParticleBlend = 0x9A4; // 
-            public const nint m_nPerParticleScale = 0x9A8; // 
-            public const nint m_nPerParticleOffsetU = 0x9AC; // 
-            public const nint m_nPerParticleOffsetV = 0x9B0; // 
-            public const nint m_nPerParticleRotation = 0x9B4; // 
-            public const nint m_nPerParticleZoom = 0x9B8; // 
-            public const nint m_nPerParticleDistortion = 0x9BC; // 
+            public const nint m_nPerParticleBlend = 0x9A4; // SpriteCardPerParticleScale_t
+            public const nint m_nPerParticleScale = 0x9A8; // SpriteCardPerParticleScale_t
+            public const nint m_nPerParticleOffsetU = 0x9AC; // SpriteCardPerParticleScale_t
+            public const nint m_nPerParticleOffsetV = 0x9B0; // SpriteCardPerParticleScale_t
+            public const nint m_nPerParticleRotation = 0x9B4; // SpriteCardPerParticleScale_t
+            public const nint m_nPerParticleZoom = 0x9B8; // SpriteCardPerParticleScale_t
+            public const nint m_nPerParticleDistortion = 0x9BC; // SpriteCardPerParticleScale_t
         }
         // Parent: None
         // Field count: 3
@@ -3665,7 +3665,7 @@ namespace CS2Dumper.Schemas {
         // MGetKV3ClassDefaults
         // MPropertyCustomEditor
         public static class CParticleVariableRef {
-            public const nint m_variableName = 0x0; // 
+            public const nint m_variableName = 0x0; // CKV3MemberNameWithStorage
             public const nint m_variableType = 0x38; // PulseValueType_t
         }
         // Parent: CParticleFunctionOperator
@@ -5493,9 +5493,9 @@ namespace CS2Dumper.Schemas {
             public const nint m_bReplaceTextureWithGradient = 0x1; // bool
             public const nint m_hTexture = 0x8; // CStrongHandle<InfoForResourceTypeCTextureBase>
             public const nint m_Gradient = 0x10; // CColorGradient
-            public const nint m_nTextureType = 0x28; // SpriteCardTextureType_t
-            public const nint m_nTextureChannels = 0x2C; // SpriteCardTextureChannel_t
-            public const nint m_nTextureBlendMode = 0x30; // 
+            public const nint m_nTextureType = 0x28; // 
+            public const nint m_nTextureChannels = 0x2C; // 
+            public const nint m_nTextureBlendMode = 0x30; // ParticleTextureLayerBlendType_t
             public const nint m_flTextureBlend = 0x38; // CParticleCollectionRendererFloatInput
             public const nint m_TextureControls = 0x198; // TextureControls_t
         }

@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2024-11-07 15:04:54.421343500 UTC
+// 2024-11-08 21:22:44.022977900 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -1109,7 +1109,7 @@ pub mod cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             pub mod CNmFrameSnapEvent {
-                pub const m_frameSnapMode: usize = 0x18; // NmFrameSnapEventMode_t
+                pub const m_frameSnapMode: usize = 0x18; // 
             }
             // Parent: None
             // Field count: 0
@@ -1194,7 +1194,7 @@ pub mod cs2_dumper {
                 pub const m_requireRuleID: usize = 0x10; // CGlobalSymbol
                 pub const m_eventConditionRules: usize = 0x18; // CNmBitFlags
                 pub const m_nSourceStateNodeIdx: usize = 0x1C; // int16
-                pub const m_ruleCondition: usize = 0x1E; // 
+                pub const m_ruleCondition: usize = 0x1E; // NmTransitionRuleCondition_t
             }
             // Parent: CAnimTagBase
             // Field count: 0
@@ -1581,8 +1581,8 @@ pub mod cs2_dumper {
                 pub const m_syncEventOffset: usize = 0x20; // float32
                 pub const m_transitionOptions: usize = 0x24; // CNmBitFlags
                 pub const m_targetSyncIDNodeIdx: usize = 0x28; // int16
-                pub const m_blendWeightEasing: usize = 0x2A; // NmEasingOperation_t
-                pub const m_rootMotionBlend: usize = 0x2B; // 
+                pub const m_blendWeightEasing: usize = 0x2A; // 
+                pub const m_rootMotionBlend: usize = 0x2B; // NmRootMotionBlendMode_t
             }
             // Parent: CNmFloatValueNode__CDefinition
             // Field count: 5
@@ -1593,7 +1593,7 @@ pub mod cs2_dumper {
                 pub const m_flEaseTime: usize = 0x10; // float32
                 pub const m_flStartValue: usize = 0x14; // float32
                 pub const m_nInputValueNodeIdx: usize = 0x18; // int16
-                pub const m_easingOp: usize = 0x1A; // NmEasingOperation_t
+                pub const m_easingOp: usize = 0x1A; // 
                 pub const m_bUseStartValue: usize = 0x1B; // bool
             }
             // Parent: None
@@ -2928,7 +2928,7 @@ pub mod cs2_dumper {
                 pub const m_values: usize = 0x38; // CUtlVectorFixedGrowable<float32,5>
                 pub const m_flDefaultValue: usize = 0x68; // float32
                 pub const m_flEaseTime: usize = 0x6C; // float32
-                pub const m_easingOp: usize = 0x70; // NmEasingOperation_t
+                pub const m_easingOp: usize = 0x70; // 
             }
             // Parent: CAnimUpdateNodeBase
             // Field count: 3
@@ -3154,9 +3154,9 @@ pub mod cs2_dumper {
             // Field count: 17
             pub mod CCompressorGroup {
                 pub const m_nTotalElementCount: usize = 0x0; // int32
-                pub const m_szChannelClass: usize = 0x8; // 
-                pub const m_szVariableName: usize = 0x20; // 
-                pub const m_nType: usize = 0x38; // CUtlVector<fieldtype_t>
+                pub const m_szChannelClass: usize = 0x8; // CUtlVector<char*>
+                pub const m_szVariableName: usize = 0x20; // CUtlVector<char*>
+                pub const m_nType: usize = 0x38; // 
                 pub const m_nFlags: usize = 0x50; // CUtlVector<int32>
                 pub const m_szGrouping: usize = 0x68; // CUtlVector<CUtlString>
                 pub const m_nCompressorIndex: usize = 0x80; // CUtlVector<int32>
@@ -4138,7 +4138,7 @@ pub mod cs2_dumper {
             // MGetKV3ClassDefaults
             // MPropertyFriendlyName
             pub mod CFootstepLandedAnimTag {
-                pub const m_FootstepType: usize = 0x58; // 
+                pub const m_FootstepType: usize = 0x58; // FootstepLandedFootSoundType_t
                 pub const m_OverrideSoundName: usize = 0x60; // CUtlString
                 pub const m_DebugAnimSourceString: usize = 0x68; // CUtlString
                 pub const m_BoneName: usize = 0x70; // CUtlString
@@ -6097,7 +6097,7 @@ pub mod cs2_dumper {
             pub mod CSeqAutoLayer {
                 pub const m_nLocalReference: usize = 0x0; // int16
                 pub const m_nLocalPose: usize = 0x2; // int16
-                pub const m_flags: usize = 0x4; // 
+                pub const m_flags: usize = 0x4; // CSeqAutoLayerFlag
                 pub const m_start: usize = 0xC; // float32
                 pub const m_peak: usize = 0x10; // float32
                 pub const m_tail: usize = 0x14; // float32
@@ -6339,7 +6339,7 @@ pub mod cs2_dumper {
                 pub const m_aAngOffset: usize = 0x6C; // QAngle
                 pub const m_AttachmentName: usize = 0x78; // CUtlString
                 pub const m_LocalAttachmentOffsetName: usize = 0x80; // CUtlString
-                pub const m_AttachmentType: usize = 0x88; // ModelConfigAttachmentType_t
+                pub const m_AttachmentType: usize = 0x88; // 
                 pub const m_bBoneMergeFlex: usize = 0x8C; // bool
                 pub const m_bUserSpecifiedColor: usize = 0x8D; // bool
                 pub const m_bUserSpecifiedMaterialGroup: usize = 0x8E; // bool

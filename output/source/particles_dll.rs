@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2024-11-07 15:04:54.421343500 UTC
+// 2024-11-08 21:22:44.022977900 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -1307,12 +1307,12 @@ pub mod cs2_dumper {
                 pub const m_flDesaturation: usize = 0x1800; // CParticleCollectionRendererFloatInput
                 pub const m_flOverbrightFactor: usize = 0x1960; // CParticleCollectionRendererFloatInput
                 pub const m_nHSVShiftControlPoint: usize = 0x1AC0; // int32
-                pub const m_nFogType: usize = 0x1AC4; // 
+                pub const m_nFogType: usize = 0x1AC4; // ParticleFogType_t
                 pub const m_flFogAmount: usize = 0x1AC8; // CParticleCollectionRendererFloatInput
                 pub const m_bTintByFOW: usize = 0x1C28; // bool
                 pub const m_bTintByGlobalLight: usize = 0x1C29; // bool
-                pub const m_nPerParticleAlphaReference: usize = 0x1C2C; // 
-                pub const m_nPerParticleAlphaRefWindow: usize = 0x1C30; // 
+                pub const m_nPerParticleAlphaReference: usize = 0x1C2C; // SpriteCardPerParticleScale_t
+                pub const m_nPerParticleAlphaRefWindow: usize = 0x1C30; // SpriteCardPerParticleScale_t
                 pub const m_nAlphaReferenceType: usize = 0x1C34; // ParticleAlphaReferenceType_t
                 pub const m_flAlphaReferenceSoftness: usize = 0x1C38; // CParticleCollectionRendererFloatInput
                 pub const m_flSourceAlphaValueToMapToZero: usize = 0x1D98; // CParticleCollectionRendererFloatInput
@@ -1338,7 +1338,7 @@ pub mod cs2_dumper {
                 pub const m_flFeatheringMaxDist: usize = 0x2438; // CParticleCollectionRendererFloatInput
                 pub const m_flFeatheringFilter: usize = 0x2598; // CParticleCollectionRendererFloatInput
                 pub const m_flDepthBias: usize = 0x26F8; // CParticleCollectionRendererFloatInput
-                pub const m_nSortMethod: usize = 0x2858; // ParticleSortingChoiceList_t
+                pub const m_nSortMethod: usize = 0x2858; // 
                 pub const m_bBlendFramesSeq0: usize = 0x285C; // bool
                 pub const m_bMaxLuminanceBlendingSequence0: usize = 0x285D; // bool
             }
@@ -2001,13 +2001,13 @@ pub mod cs2_dumper {
                 pub const m_flDistortion: usize = 0x840; // CParticleCollectionRendererFloatInput
                 pub const m_bRandomizeOffsets: usize = 0x9A0; // bool
                 pub const m_bClampUVs: usize = 0x9A1; // bool
-                pub const m_nPerParticleBlend: usize = 0x9A4; // 
-                pub const m_nPerParticleScale: usize = 0x9A8; // 
-                pub const m_nPerParticleOffsetU: usize = 0x9AC; // 
-                pub const m_nPerParticleOffsetV: usize = 0x9B0; // 
-                pub const m_nPerParticleRotation: usize = 0x9B4; // 
-                pub const m_nPerParticleZoom: usize = 0x9B8; // 
-                pub const m_nPerParticleDistortion: usize = 0x9BC; // 
+                pub const m_nPerParticleBlend: usize = 0x9A4; // SpriteCardPerParticleScale_t
+                pub const m_nPerParticleScale: usize = 0x9A8; // SpriteCardPerParticleScale_t
+                pub const m_nPerParticleOffsetU: usize = 0x9AC; // SpriteCardPerParticleScale_t
+                pub const m_nPerParticleOffsetV: usize = 0x9B0; // SpriteCardPerParticleScale_t
+                pub const m_nPerParticleRotation: usize = 0x9B4; // SpriteCardPerParticleScale_t
+                pub const m_nPerParticleZoom: usize = 0x9B8; // SpriteCardPerParticleScale_t
+                pub const m_nPerParticleDistortion: usize = 0x9BC; // SpriteCardPerParticleScale_t
             }
             // Parent: None
             // Field count: 3
@@ -3744,7 +3744,7 @@ pub mod cs2_dumper {
             // MGetKV3ClassDefaults
             // MPropertyCustomEditor
             pub mod CParticleVariableRef {
-                pub const m_variableName: usize = 0x0; // 
+                pub const m_variableName: usize = 0x0; // CKV3MemberNameWithStorage
                 pub const m_variableType: usize = 0x38; // PulseValueType_t
             }
             // Parent: CParticleFunctionOperator
@@ -5572,9 +5572,9 @@ pub mod cs2_dumper {
                 pub const m_bReplaceTextureWithGradient: usize = 0x1; // bool
                 pub const m_hTexture: usize = 0x8; // CStrongHandle<InfoForResourceTypeCTextureBase>
                 pub const m_Gradient: usize = 0x10; // CColorGradient
-                pub const m_nTextureType: usize = 0x28; // SpriteCardTextureType_t
-                pub const m_nTextureChannels: usize = 0x2C; // SpriteCardTextureChannel_t
-                pub const m_nTextureBlendMode: usize = 0x30; // 
+                pub const m_nTextureType: usize = 0x28; // 
+                pub const m_nTextureChannels: usize = 0x2C; // 
+                pub const m_nTextureBlendMode: usize = 0x30; // ParticleTextureLayerBlendType_t
                 pub const m_flTextureBlend: usize = 0x38; // CParticleCollectionRendererFloatInput
                 pub const m_TextureControls: usize = 0x198; // TextureControls_t
             }

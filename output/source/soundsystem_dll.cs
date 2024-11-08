@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2024-11-07 15:04:54.421343500 UTC
+// 2024-11-08 21:22:44.022977900 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: soundsystem.dll
@@ -233,8 +233,8 @@ namespace CS2Dumper.Schemas {
         // MPropertyFriendlyName
         // MPropertyDescription
         public static class CVoiceContainerBlender {
-            public const nint m_firstSound = 0xC0; // CSoundContainerReference
-            public const nint m_secondSound = 0xD8; // CSoundContainerReference
+            public const nint m_firstSound = 0xC0; // 
+            public const nint m_secondSound = 0xD8; // 
             public const nint m_flBlendFactor = 0xF0; // float32
         }
         // Parent: None
@@ -359,7 +359,7 @@ namespace CS2Dumper.Schemas {
         public static class CSoundContainerReference {
             public const nint m_bUseReference = 0x0; // bool
             public const nint m_sound = 0x8; // CStrongHandle<InfoForResourceTypeCVoiceContainerBase>
-            public const nint m_pSound = 0x10; // CVoiceContainerBase*
+            public const nint m_pSound = 0x10; // 
         }
         // Parent: CVoiceContainerBase
         // Field count: 0
@@ -565,7 +565,7 @@ namespace CS2Dumper.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CAudioMorphData {
-            public const nint m_times = 0x0; // 
+            public const nint m_times = 0x0; // CUtlVector<float32>
             public const nint m_nameHashCodes = 0x18; // CUtlVector<uint32>
             public const nint m_nameStrings = 0x30; // CUtlVector<CUtlString>
             public const nint m_samples = 0x48; // CUtlVector<CUtlVector<float32>>
@@ -747,7 +747,7 @@ namespace CS2Dumper.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CVoiceContainerSetElement {
-            public const nint m_sound = 0x0; // CSoundContainerReference
+            public const nint m_sound = 0x0; // 
             public const nint m_flVolumeDB = 0x18; // float32
         }
         // Parent: None
@@ -966,8 +966,8 @@ namespace CS2Dumper.Schemas {
         // MPropertyDescription
         public static class CVoiceContainerSelector {
             public const nint m_mode = 0xC0; // PlayBackMode_t
-            public const nint m_soundsToPlay = 0xC8; // CSoundContainerReferenceArray
-            public const nint m_fProbabilityWeights = 0x100; // 
+            public const nint m_soundsToPlay = 0xC8; // 
+            public const nint m_fProbabilityWeights = 0x100; // CUtlVector<float32>
         }
         // Parent: CSosGroupActionSchema
         // Field count: 2
@@ -1060,7 +1060,7 @@ namespace CS2Dumper.Schemas {
         // MPropertyFriendlyName
         // MPropertyDescription
         public static class CVoiceContainerLoopTrigger {
-            public const nint m_sound = 0xC0; // CSoundContainerReference
+            public const nint m_sound = 0xC0; // 
             public const nint m_flRetriggerTimeMin = 0xD8; // float32
             public const nint m_flRetriggerTimeMax = 0xDC; // float32
             public const nint m_flFadeTime = 0xE0; // float32

@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2024-11-07 15:04:54.421343500 UTC
+// 2024-11-08 21:22:44.022977900 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: pulse_system.dll
@@ -558,7 +558,7 @@ namespace CS2Dumper.Schemas {
         public static class CPulse_PublicOutput {
             public const nint m_Name = 0x0; // CUtlSymbolLarge
             public const nint m_Description = 0x8; // CUtlString
-            public const nint m_ParamType = 0x10; // 
+            public const nint m_ParamType = 0x10; // CPulseValueFullType
         }
         // Parent: None
         // Field count: 0
@@ -729,9 +729,9 @@ namespace CS2Dumper.Schemas {
         public static class PGDInstruction_t {
             public const nint m_nCode = 0x0; // PulseInstructionCode_t
             public const nint m_nVar = 0x4; // PulseRuntimeVarIndex_t
-            public const nint m_nReg0 = 0x8; // 
-            public const nint m_nReg1 = 0xA; // 
-            public const nint m_nReg2 = 0xC; // 
+            public const nint m_nReg0 = 0x8; // PulseRuntimeRegisterIndex_t
+            public const nint m_nReg1 = 0xA; // PulseRuntimeRegisterIndex_t
+            public const nint m_nReg2 = 0xC; // PulseRuntimeRegisterIndex_t
             public const nint m_nInvokeBindingIndex = 0x10; // PulseRuntimeInvokeIndex_t
             public const nint m_nChunk = 0x14; // PulseRuntimeChunkIndex_t
             public const nint m_nDestInstruction = 0x18; // int32
@@ -760,7 +760,7 @@ namespace CS2Dumper.Schemas {
         public static class CPulse_Variable {
             public const nint m_Name = 0x0; // CUtlSymbolLarge
             public const nint m_Description = 0x8; // CUtlString
-            public const nint m_Type = 0x10; // 
+            public const nint m_Type = 0x10; // CPulseValueFullType
             public const nint m_DefaultValue = 0x20; // KeyValues3
             public const nint m_bIsPublic = 0x32; // bool
             public const nint m_bIsObservable = 0x33; // bool
@@ -778,7 +778,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_MethodName = 0x70; // CUtlSymbolLarge
             public const nint m_Description = 0x78; // CUtlString
             public const nint m_bIsPublic = 0x80; // bool
-            public const nint m_ReturnType = 0x88; // 
+            public const nint m_ReturnType = 0x88; // CPulseValueFullType
             public const nint m_Args = 0x98; // CUtlLeanVector<CPulseRuntimeMethodArg>
         }
         // Parent: CBasePulseGraphInstance
@@ -936,7 +936,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_SourceEntity = 0x70; // CUtlSymbolLarge
             public const nint m_SourceOutput = 0x78; // CUtlSymbolLarge
             public const nint m_TargetInput = 0x80; // CUtlSymbolLarge
-            public const nint m_ExpectedParamType = 0x88; // 
+            public const nint m_ExpectedParamType = 0x88; // CPulseValueFullType
         }
         // Parent: None
         // Field count: 1
@@ -1016,9 +1016,9 @@ namespace CS2Dumper.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CPulse_RegisterInfo {
-            public const nint m_nReg = 0x0; // 
-            public const nint m_Type = 0x8; // 
-            public const nint m_OriginName = 0x18; // 
+            public const nint m_nReg = 0x0; // PulseRuntimeRegisterIndex_t
+            public const nint m_Type = 0x8; // CPulseValueFullType
+            public const nint m_OriginName = 0x18; // CKV3MemberNameWithStorage
             public const nint m_nWrittenByInstruction = 0x50; // int32
             public const nint m_nLastReadByInstruction = 0x54; // int32
         }
@@ -1098,7 +1098,7 @@ namespace CS2Dumper.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CPulse_Constant {
-            public const nint m_Type = 0x0; // 
+            public const nint m_Type = 0x0; // CPulseValueFullType
             public const nint m_Value = 0x10; // KeyValues3
         }
         // Parent: CPulseCell_WaitForCursorsWithTagBase
@@ -1198,9 +1198,9 @@ namespace CS2Dumper.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CPulseRuntimeMethodArg {
-            public const nint m_Name = 0x0; // 
+            public const nint m_Name = 0x0; // CKV3MemberNameWithStorage
             public const nint m_Description = 0x38; // CUtlString
-            public const nint m_Type = 0x40; // 
+            public const nint m_Type = 0x40; // CPulseValueFullType
         }
         // Parent: None
         // Field count: 1

@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2024-11-07 15:04:54.421343500 UTC
+// 2024-11-08 21:22:44.022977900 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -570,7 +570,7 @@ pub mod cs2_dumper {
             pub mod CPulse_PublicOutput {
                 pub const m_Name: usize = 0x0; // CUtlSymbolLarge
                 pub const m_Description: usize = 0x8; // CUtlString
-                pub const m_ParamType: usize = 0x10; // 
+                pub const m_ParamType: usize = 0x10; // CPulseValueFullType
             }
             // Parent: None
             // Field count: 0
@@ -741,9 +741,9 @@ pub mod cs2_dumper {
             pub mod PGDInstruction_t {
                 pub const m_nCode: usize = 0x0; // PulseInstructionCode_t
                 pub const m_nVar: usize = 0x4; // PulseRuntimeVarIndex_t
-                pub const m_nReg0: usize = 0x8; // 
-                pub const m_nReg1: usize = 0xA; // 
-                pub const m_nReg2: usize = 0xC; // 
+                pub const m_nReg0: usize = 0x8; // PulseRuntimeRegisterIndex_t
+                pub const m_nReg1: usize = 0xA; // PulseRuntimeRegisterIndex_t
+                pub const m_nReg2: usize = 0xC; // PulseRuntimeRegisterIndex_t
                 pub const m_nInvokeBindingIndex: usize = 0x10; // PulseRuntimeInvokeIndex_t
                 pub const m_nChunk: usize = 0x14; // PulseRuntimeChunkIndex_t
                 pub const m_nDestInstruction: usize = 0x18; // int32
@@ -772,7 +772,7 @@ pub mod cs2_dumper {
             pub mod CPulse_Variable {
                 pub const m_Name: usize = 0x0; // CUtlSymbolLarge
                 pub const m_Description: usize = 0x8; // CUtlString
-                pub const m_Type: usize = 0x10; // 
+                pub const m_Type: usize = 0x10; // CPulseValueFullType
                 pub const m_DefaultValue: usize = 0x20; // KeyValues3
                 pub const m_bIsPublic: usize = 0x32; // bool
                 pub const m_bIsObservable: usize = 0x33; // bool
@@ -790,7 +790,7 @@ pub mod cs2_dumper {
                 pub const m_MethodName: usize = 0x70; // CUtlSymbolLarge
                 pub const m_Description: usize = 0x78; // CUtlString
                 pub const m_bIsPublic: usize = 0x80; // bool
-                pub const m_ReturnType: usize = 0x88; // 
+                pub const m_ReturnType: usize = 0x88; // CPulseValueFullType
                 pub const m_Args: usize = 0x98; // CUtlLeanVector<CPulseRuntimeMethodArg>
             }
             // Parent: CBasePulseGraphInstance
@@ -948,7 +948,7 @@ pub mod cs2_dumper {
                 pub const m_SourceEntity: usize = 0x70; // CUtlSymbolLarge
                 pub const m_SourceOutput: usize = 0x78; // CUtlSymbolLarge
                 pub const m_TargetInput: usize = 0x80; // CUtlSymbolLarge
-                pub const m_ExpectedParamType: usize = 0x88; // 
+                pub const m_ExpectedParamType: usize = 0x88; // CPulseValueFullType
             }
             // Parent: None
             // Field count: 1
@@ -1028,9 +1028,9 @@ pub mod cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             pub mod CPulse_RegisterInfo {
-                pub const m_nReg: usize = 0x0; // 
-                pub const m_Type: usize = 0x8; // 
-                pub const m_OriginName: usize = 0x18; // 
+                pub const m_nReg: usize = 0x0; // PulseRuntimeRegisterIndex_t
+                pub const m_Type: usize = 0x8; // CPulseValueFullType
+                pub const m_OriginName: usize = 0x18; // CKV3MemberNameWithStorage
                 pub const m_nWrittenByInstruction: usize = 0x50; // int32
                 pub const m_nLastReadByInstruction: usize = 0x54; // int32
             }
@@ -1110,7 +1110,7 @@ pub mod cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             pub mod CPulse_Constant {
-                pub const m_Type: usize = 0x0; // 
+                pub const m_Type: usize = 0x0; // CPulseValueFullType
                 pub const m_Value: usize = 0x10; // KeyValues3
             }
             // Parent: CPulseCell_WaitForCursorsWithTagBase
@@ -1210,9 +1210,9 @@ pub mod cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             pub mod CPulseRuntimeMethodArg {
-                pub const m_Name: usize = 0x0; // 
+                pub const m_Name: usize = 0x0; // CKV3MemberNameWithStorage
                 pub const m_Description: usize = 0x38; // CUtlString
-                pub const m_Type: usize = 0x40; // 
+                pub const m_Type: usize = 0x40; // CPulseValueFullType
             }
             // Parent: None
             // Field count: 1
